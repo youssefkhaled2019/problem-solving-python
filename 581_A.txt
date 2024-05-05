@@ -1,0 +1,9 @@
+"""
+contest=https://codeforces.com/contest/581/problem/A
+date=  Sunday, May 5, 2024 
+Verdict  =  Accepted
+""" 
+
+
+a,b=map(int,input().split())
+print(min(a,b),((max(a,b)-min(a,b))//2))

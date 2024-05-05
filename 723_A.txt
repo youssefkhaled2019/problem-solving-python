@@ -1,0 +1,8 @@
+"""
+contest=https://codeforces.com/contest/723/problem/A 
+date= Sunday, May 5, 2024 
+Verdict =Accepted
+"""
+
+a,b,c=sorted(list(map(int,input().split())))
+print(c-b+b-a)
