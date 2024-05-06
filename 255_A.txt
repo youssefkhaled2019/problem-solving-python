@@ -1,0 +1,25 @@
+"""
+contest=https://codeforces.com/contest/255/problem/A
+date=    Monday, May 6, 2024 
+Verdict  =  Accepted
+"""
+n=int(input())
+x=list(map(int,input().split()))
+l=[0,0,0]
+p=["chest","biceps","back"]
+for i in range(0,len(x),3):
+    if n>0:l[0]+=x[i]; n-=1
+    if n>0:l[1]+=x[i+1]; n-=1
+    if n>0:l[2]+=x[i+2]; n-=1
+
+print(p[l.index(max(l))])   
+
+
+
+
+
+# -----------------------------------
+# input()
+# l=map(int,raw_input().split())
+# print["chest","biceps","back"][max(0,1,2,key=lambda i:sum(l[i::3]))]
+# -----------------------------------
