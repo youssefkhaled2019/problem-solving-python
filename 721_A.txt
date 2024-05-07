@@ -1,0 +1,8 @@
+"""
+contest=https://codeforces.com/contest/721/problem/A
+date=   Tuesday, May 7, 2024 
+Verdict  = Accepted
+"""
+input()
+a = [len(i) for i in input().split('W') if i] # if i delete ""   in list->['', 'BBBB', '', 'B', 'BBB', '']
+print(len(a), *a)

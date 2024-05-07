@@ -1,0 +1,12 @@
+"""
+contest=https://codeforces.com/contest/546/problem/A  
+date=   Tuesday, May 7, 2024 
+Verdict  =  Accepted
+"""
+k,n,w=map(int,input().split())
+s=b=0
+for i in range(1,w+1):
+   s+=i*k
+p= s-n if (s-n)>=1 else 0
+
+print(p)
